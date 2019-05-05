@@ -70,4 +70,4 @@ clean:
 	rm -f build/*.o
 	rm -f bin/*.exe
 	rm -R build
-rm -R bin
+	rm -R bin
