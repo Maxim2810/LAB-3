@@ -11,7 +11,7 @@ folder1:
 folder2:
 	mkdir -p bin
 
-bin/geometry.exe: build/main.o build/circle_intersects.o build/printCircle.o build/poligon.o build/triangle.o build/proverka.o build/areCollinear.o build/getMin.o build/getMax.o build/pI.o build/getSlope.o build/getYIntercept.o build/getCos.o build/testing.o build/perpendicular.o build/distan.o
+bin/geometry.exe: build/main.o build/circle_intersects.o build/printCircle.o build/poligon.o build/triangle.o build/proverka.o build/areCollinear.o build/getMin.o build/getMax.o build/pI.o build/getSlope.o build/getY.o build/getCos.o build/testing.o build/perpendicular.o build/distan.o
 
 	g++ $(CFLAGS) $^ -o $@
 
