@@ -41,7 +41,6 @@ void printPoligon(
             cout << k << ". Circle" << endl;
         } else if (lkl == 2) {
             cout << k << ". Triangle" << endl;
- 
         } else if (lkl == 3) {
             cout << k << ". Poligon" << endl;
         }

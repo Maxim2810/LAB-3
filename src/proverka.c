@@ -5,7 +5,7 @@ extern int testing(double a, double b, double c, double& J);
 
 void proverka(
         double x0,
-2m        double y0,
+        2m double y0,
         double x1,
         double y1,
         double x2,
