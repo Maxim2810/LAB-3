@@ -11,7 +11,7 @@ folder1:
 folder2:
 	mkdir -p bin
 
-bin/geometry.exe: build/main.o build/circle_intersects.o build/printCircle.o build/poligon.o build/triangle.o build/proverka.o build/areCollinear.o build/getMin.o build/getMax.o build/pI.o build/getSlope.o build/getY.o build/getCos.o build/testing.o build/perpendicular.o build/distan.o
+bin/geometry.exe: build/main.o build/circle_intersects.o build/printCircle.o build/poligon.o build/triangle.o build/proverka.o build/proverka_perecech_otrezkov.o build/input_data.o build/areCollinear.o build/getMin.o build/getMax.o build/pI.o build/getSlope.o build/getY.o build/getCos.o build/testing.o build/perpendicular.o build/distan.o build/prov_data.o build/prov_print.o
 
 	g++ $(CFLAGS) $^ -o $@
 
@@ -65,6 +65,13 @@ build/perpendicular.o: src/perpendicular.c src/geometry.h
 
 build/testing.o: src/testing.c src/geometry.h
 	$(OBJ)
+
+build/prov_data.o: src/prov_data.c src/geometry.h src/figure.h
+	$(OBJ)
+
+build/prov_print.o: src/prov_print.c src/geometry.h src/figure.h
+	$(OBJ)
+
 
 clean:
 	rm -f build/*.o
