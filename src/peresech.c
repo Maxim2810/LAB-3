@@ -68,7 +68,7 @@ int peresech(double x1, double y1, double x2, double y2, double x3, double y3, d
 			else
 				/*cout << "Don't intersect";*/ fact = false;
 		}
-		else if (slope1 == 0 ^ slope2 == 0) {
+		else if (slope1 == 0 || slope2 == 0) {
 			if (slope1 == 0) {
 				swap(x1, x3);
 				swap(x2, x4);
