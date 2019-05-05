@@ -1,15 +1,15 @@
 #include "geometry.h"
 void printTriangle(
-	double x1, 
-	double y1, 
-	double x2, 
-	double y2, 
-	double x3, 
-	double y3, 
-	bool flag, 
-	int k, 
-	int lkl,
-	int n)
+        double x1,
+        double y1,
+        double x2,
+        double y2,
+        double x3,
+        double y3,
+        bool flag,
+        int k,
+        int lkl,
+        int n)
 {
     double s, p, determinant;
     p = sqrt((x2 - x1) * (x2 - x1)) + sqrt((x3 - x1) * (x3 - x1))
@@ -33,7 +33,6 @@ void printTriangle(
             cout << k << ". Circle" << endl;
         } else if (lkl == 2) {
             cout << k << ". Triangle" << endl;
- 
         } else if (lkl == 3) {
             cout << k << ". Poligon" << endl;
         }

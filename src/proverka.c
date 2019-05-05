@@ -4,15 +4,15 @@ extern void perpendicular(double a, double b, double c, double P, double& H);
 extern int testing(double a, double b, double c, double& J);
 
 void proverka(
-	double x0, 
-	double y0, 
-	double x1, 
-	double y1, 
-	double x2, 
-	double y2, 
-	double& Perimetr, 
-	double r, 
-	bool& okr)
+        double x0,
+2m        double y0,
+        double x1,
+        double y1,
+        double x2,
+        double y2,
+        double& Perimetr,
+        double r,
+        bool& okr)
 {
     double a, b, c, H, dl, J, Poluper;
 

@@ -1,7 +1,7 @@
 #include "geometry.h"
-double pi=3.14159265359;
+double pi = 3.14159265359;
 void printCircle(
-        double x1, double y1, double r1, bool flag, int k, int lkl,int n)
+        double x1, double y1, double r1, bool flag, int k, int lkl, int n)
 {
     double p1, s1;
     p1 = pi * r1 * r1;
