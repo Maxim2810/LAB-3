@@ -3,7 +3,7 @@ OBJ = g++ $(CFLAGS) -c $< -o $@
 
 .PHONY: clean
 
-all: folder1 folder2 bin/geometry.h
+all: folder1 folder2 bin/geometry.exe
 
 folder1:
 	mkdir -p build
