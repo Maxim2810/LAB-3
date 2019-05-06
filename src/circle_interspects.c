@@ -1,6 +1,6 @@
 #include "geometry.h"
 
-extern void 
+extern void
 printCircle(double x1, double y1, double r1, bool flag, int k, int lkl, int n);
 
 void circle_intersects(

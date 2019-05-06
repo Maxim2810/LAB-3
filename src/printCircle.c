@@ -20,7 +20,7 @@ void printCircle(
         } else if (lkl == 3) {
             cout << k << ". Poligon" << endl;
         }
- 
+
     } else
         printf("intersects: \n   - \n");
 }
