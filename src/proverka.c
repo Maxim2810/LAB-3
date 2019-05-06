@@ -1,11 +1,13 @@
 #include "geometry.h"
 extern void distan(double x, double y, double x1, double y1, double& L);
+
 extern void perpendicular(double a, double b, double c, double P, double& H);
+
 extern int testing(double a, double b, double c, double& J);
 
 void proverka(
         double x0,
-        2m double y0,
+        double y0,
         double x1,
         double y1,
         double x2,
@@ -31,5 +33,5 @@ void proverka(
         dl = J;
     if (dl <= r) {
         okr = true;
-    }
+   }
 }
