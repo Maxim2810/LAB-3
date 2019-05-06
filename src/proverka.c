@@ -33,5 +33,5 @@ void proverka(
         dl = J;
     if (dl <= r) {
         okr = true;
-   }
+    }
 }

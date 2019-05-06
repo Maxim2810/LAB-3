@@ -36,6 +36,7 @@ void printTriangle(
         } else if (lkl == 3) {
             cout << k << ". Poligon" << endl;
         }
-    } else
+    } else {
         printf("intersects: \n   - \n");
+    }
 }
