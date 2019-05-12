@@ -1,11 +1,10 @@
 #include "geometry.h"
 
-void input_data(int f, int f1)
-{
-    if (f1 < 1 || f < 1 || f1 > 3 || f > 3) {
-        cout << "ERROR INPUT DATA" << endl;
-        exit(0);
-    }
+int input_data(int f, int f1) {
+  if (f1 <= 0 || f <= 0 || f1 > 3 || f > 3) {
+    return 0;
+  } else
+    return 1;
 }
 TEST_CASE("INPUTDATA", "[INPUT]") {
   REQUIRE(input_data(1, 2) == 1);
