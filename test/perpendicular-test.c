@@ -1,7 +1,7 @@
 #include "geometry.h"
-void perpendicular(double a, double b, double c, double P, double& H)
+int perpendicular(double a, double b, double c, double P, double& H)
 {
-    H = (2 * sqrt(P * (P - a) * (P - b) * (P - c))) / c;
+    return (2 * sqrt(P * (P - a) * (P - b) * (P - c))) / c;
 }
 TEST_CASE("DLINA_PERPENDICULARA", "[90*]") {
   REQUIRE(perpendicular(11, 11, 10, 16) == 9);
