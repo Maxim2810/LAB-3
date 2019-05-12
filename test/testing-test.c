@@ -14,3 +14,10 @@ int testing(double a, double b, double c, double& J)
     }
     return -1;
 }
+
+TEST_CASE("TESTING_A_B_C", "[A,B,C]") {
+  double J = 0;
+  REQUIRE(testing(1, 2, 3, J) == -1);
+  REQUIRE(testing(10, 2, 3, J) == 1);
+  cout << "Test function testing" << endl;
+}
