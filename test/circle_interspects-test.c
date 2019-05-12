@@ -21,3 +21,11 @@ void circle_intersects(
     printCircle(x, y, r, flag, 2, 1, 1);
     printCircle(x1, y1, r1, flag, 1, 1, 2);
 }
+TEST_CASE("CIRCLEINTERSECTS", "[int]") {
+  REQUIRE(circle_intersects(0, 0, 2, 3, 0, 2) == 1);
+  REQUIRE(circle_intersects(-5, -6, 2, 0, 0, 2) == 0);
+  REQUIRE(circle_intersects(-5, -6, 2, 5, 7, 2) == 0);
+  REQUIRE(circle_intersects(0, 0, 2, 0, 0, 2) == 1);
+  REQUIRE(circle_intersects(0, 0, 2, 4, 0, 2) == 1);
+  cout << "Test sircle intersects" << endl;
+}
