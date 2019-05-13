@@ -1,9 +1,10 @@
 CFLAGS = -Wall -Werror
 OBJ = g++ $(CFLAGS) -c $< -o $@
+TEST = g++ $(GFAGS) -I thirtdparty/catch2 -c $< -o $@
 
 .PHONY: clean
 
-all: folder1 folder2 bin/geometry.exe
+all: folder1 folder2 folder3 folder4 bin/geometry.exe
 
 folder1:
 	mkdir -p build
