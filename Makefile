@@ -1,6 +1,6 @@
 CFLAGS = -Wall -Werror
-OBJ = g++ $(CFLAGS) -c $< -o $@
-TEST = g++ $(GFAGS) -I thirdparty/ -c $< -o $@
+OBJ = g++ -std=c++11 $(CFLAGS) -c $< -o $@
+TEST = g++ -std=c++11 $(GFAGS) -I thirdparty/ -c $< -o $@
 
 .PHONY: clean
 
