@@ -82,7 +82,9 @@ build/prov_data.o: src/prov_data.c src/geometry.h src/figure.h
 build/prov_print.o: src/prov_print.c src/geometry.h src/figure.h
 	$(OBJ)
 
-bin/geometry-test: folder1 folder2 folder3 folder4 bin/geometry-test build/test/test.o build/test/circle_intersects.o build/test/printCircle.o build/test/printPoligon.o build/test/printTriangle.o build/test/proverka.o  build/test/input_data.o build/test/areCollinear.o build/test/getMin.o build/test/getMax.o build/test/prijectionsIntersect.o build/test/getSlope.o build/test/getYIntercept.o build/test/getCos.o build/test/testing.o build/test/perpendicular.o build/test/distan.o build/test/prov_data.o 
+test: folder1 folder2 folder3 folder4 bin/geometry-test
+
+bin/geometry-test: build/test/test.o build/test/circle_intersects.o build/test/printCircle.o build/test/printPoligon.o build/test/printTriangle.o build/test/proverka.o  build/test/input_data.o build/test/areCollinear.o build/test/getMin.o build/test/getMax.o build/test/prijectionsIntersect.o build/test/getSlope.o build/test/getYIntercept.o build/test/getCos.o build/test/testing.o build/test/perpendicular.o build/test/distan.o build/test/prov_data.o 
 	g++ $(CFLAGS) -I thirtdparty/catch2  $^ -o $@
 
 build/test/test.o: test/test.c test/geometry.h test/figure.h 
