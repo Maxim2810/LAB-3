@@ -17,9 +17,8 @@ int circle_intersects(
     } else
     	flag = 0;
     return flag;
-    }
-    printCircle(x, y, r, flag, 2, 1, 1);
-    printCircle(x1, y1, r1, flag, 1, 1, 2);
+    
+   
 }
 TEST_CASE("CIRCLEINTERSECTS", "[int]") {
   REQUIRE(circle_intersects(0, 0, 2, 3, 0, 2) == 1);

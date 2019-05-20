@@ -1,5 +1,5 @@
 #include "geometry.h"
-int perpendicular(double a, double b, double c, double P, double& H)
+int perpendicular(double a, double b, double c, double P)
 {
     return (2 * sqrt(P * (P - a) * (P - b) * (P - c))) / c;
 }
